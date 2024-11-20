@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Тест по правовому обеспечению</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Тест по правовому обеспечению профессиональной деятельности</h1>
+  <div id="name-input">
+    Имя: <input type="text" id="userName">
+  </div>
+  <div id="difficulty-select">
+    Сложность:
+    <select id="difficulty">
+      <option value="easy">Малая</option>
+      <option value="medium">Средняя</option>
+      <option value="hard">Высокая</option>
+    </select>
+  </div>
+  <button id="start-test">Пройти тест</button>
+
+  <div id="test-container" style="display:none;">
+    <div id="questions"></div>
+    <button id="submit-test">Сдать тест</button>
+  </div>
+
+  <div id="results-container" style="display:none;">
+    <h2>Результаты:</h2>
+    <p id="score"></p>
+    <p id="grade"></p>
+    <div id="detailed-results"></div>
+    <button id="retry-test">Пересдать тест</button>
+    <button id="go-back">Назад</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
